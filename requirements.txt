@@ -1,0 +1,14 @@
+numpy>=2.0
+pandas>=2.2
+pyarrow
+scipy
+openpyxl
+matplotlib
+statsforecast>=2.0
+utilsforecast
+lightgbm>=4.0
+torch>=2.3
+chronos-forecasting>=2.2
+neuralforecast
+timesfm
+tirex-ts
