@@ -68,7 +68,8 @@ def main():
     print(t[["id", "diff_pp", "lo", "hi", "p", "p_holm", "p_bh"]].round(4).to_string(index=False))
     fp = lambda x: "$<$0.001" if x < 0.001 else "%.3f" % x
     bf = lambda x: ("\\textbf{%s}" % fp(x)) if x < .05 else fp(x)
-    lines = [f"{r.id} & {r.label} & {r.level} & {r.diff_pp:+.2f} [{r.lo:+.2f}, {r.hi:+.2f}] & "
+    fe = lambda x: f"{x:+.2f}" if abs(x) >= 0.005 else f"{x:+.3f}"   # avoid printing -0.00
+    lines = [f"{r.id} & {r.label} & {r.level} & {fe(r.diff_pp)} [{fe(r.lo)}, {fe(r.hi)}] & "
              + fp(r.p) + " & " + bf(r.p_holm) + r" \\" for r in t.itertuples()]
     open(os.path.join(ROOT, "paper/tables/tab_holm.tex"), "w").write("\n".join(lines) + "\n")
 
