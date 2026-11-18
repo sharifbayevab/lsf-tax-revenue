@@ -8,9 +8,10 @@ next-12-month expectation.
 
 Only annual national receipts by tax are public, so the shape layer forecasts
 one step of an annual real series; the test is about the level layer.
-Origin T = mid-January of year T+1: receipts and CPI of year T are known, the
-latest survey used is the one for November of year T, the growth anchor is
-real GDP growth over the first nine months of year T (SIAT, current vintage).
+Decision date: publication of the full-year execution figures of year T, in the first quarter of T+1 (the Tax
+Committee announces the annual total in January; by-tax figures follow). Receipts and CPI of year T are then known;
+the survey used is the one for November of year T, older than the decision date. The e=1 variants use real GDP growth
+over the first nine months of year T (SIAT, current vintage); the paper reports e=0 (no growth anchor).
 """
 import json
 import sys

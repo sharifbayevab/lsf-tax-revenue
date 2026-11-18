@@ -37,6 +37,7 @@ Main entry points:
 | Bootstrap tests, Holm family | `p7_tests.py`, `p15_holm.py` |
 | Tables and figures | `p10_figs.py`, `p11_tables.py`, `p13_tables_new.py`, `p16_tab_gdp.py` |
 | Uzbekistan annual check | `p17_uzb_siat.py`, `p18_uzb_annual.py`, `p18b_uzb_table.py` |
+| Robustness (economic rule, post-release window, leave-one-year-out, bias calibration, estimated elasticity, covariate 2×2, coverage, attention ablation) | `p19`–`p26`, `run_review5_mps.sh` |
 
 The panel is selected with the environment variable `DATASET` (`br`, `ar`, `es`, `pe`, `super`);
 `run_ext.sh` and `run_super.sh` run the external-panel pipeline.
