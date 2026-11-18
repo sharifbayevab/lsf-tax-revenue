@@ -1,7 +1,7 @@
 # LSF: Level–Shape Forecaster for tax revenue
 
 Code for the paper *Level before Shape in Time-Series Forecasting of Tax Revenue with Foundation Models*
-(Askaraliyev, Sharifbaev, Normatova, Mamatkulov, Mukhammadov; submitted to *Array*).
+(Askaraliyev, Sharifbaev, Normatova, Mamatkulov, Mukhammadov, Muminov; submitted to *Array*).
 
 LSF splits a nominal revenue forecast into two parts:
 
