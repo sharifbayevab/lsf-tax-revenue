@@ -33,7 +33,7 @@ open(f"{OUT}/tab_data.tex", "w").write("\n".join(rows) + "\n")
 
 # ---------------- Table: Brazil benchmark ----------------
 common, macro, p4, tl = load("br"); df = common.load_panel(); sc = common.mase_scales(df)
-BENCH = [("Seasonal naïve", "snaive", "nominal"), ("ETS", "ets", "nominal"), ("AutoARIMA", "arima", "nominal"),
+BENCH = [("Seasonal naive", "snaive", "nominal"), ("ETS", "ets", "nominal"), ("AutoARIMA", "arima", "nominal"),
          ("AutoTheta", "theta", "nominal"), ("Chronos-2", "c2_xl_tax", "nominal"),
          ("AutoTheta", "theta_real_naive_gdp1", "level"), ("LightGBM (global)", "lgbm_real_naive_gdp1", "level"),
          ("DeepAR", "DeepAR_real_naive_gdp1", "level"), ("TFT", "TFT_real_naive_gdp1", "level"),

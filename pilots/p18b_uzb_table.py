@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 r = pd.read_csv(ROOT / "results" / "uzb" / "annual_check.csv")
 
 ROWS = [  # (label, method, nominal counterpart for the win count)
-    ("Na\\\"ive (last year)", "Naive", None),
+    ("Naive (last year)", "Naive", None),
     ("Drift", "Drift", None),
     ("AutoTheta, nominal", "AutoTheta nominal", None),
     ("Chronos-2, nominal", "Chronos-2 nominal", None),
